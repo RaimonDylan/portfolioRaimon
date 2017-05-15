@@ -1,0 +1,73 @@
+body {
+  background-color: #ff4814;
+}
+#container{
+    margin-top: calc(50vh - 211px);
+}
+
+.containerGhostCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+.containerGhost {
+  width:31%;
+  margin-bottom: 15%;
+}
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+.shadow ellipse {
+  transform-origin: center center;
+}
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+.btn{
+    background-color: white;  
+    color: black;
+}
+.btn:hover{
+    background-color: white;  
+    color: black;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+.input-field input[type=password]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+
+
